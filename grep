@@ -1,0 +1,3 @@
+
+# Grep for 9 character words and look for words containing the letter "i" then word count it
+$ cat file | grep -Px '\X{9}' | grep -E ‘\i’ | wc -l
