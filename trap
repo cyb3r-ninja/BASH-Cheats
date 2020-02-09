@@ -1,0 +1,8 @@
+# Print Understand and set trap on signal SIGTSTP
+$ trap 'echo "Understand"; EXIT' SIGTSTP
+
+# Print l and set trap on signal SIGINT
+$ trap 'echo "l"; EXIT' SIGINT
+
+# Print TrapCmd and set trap on signal SIGQUIT
+trap 'echo "TrapCmd"; EXIT' SIGQUIT
